@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人主页 / 作品集" />
+    <title>Mosery | 个人主页</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <header class="container header">
+      <a class="brand" href="#">
+        <span class="logo">M</span>
+        <span class="brand-text">Mosery</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <p class="badge">前端 / 全栈 · 可接项目</p>
+          <h1 class="title">把产品做“能用、好用、可持续迭代”</h1>
+          <p class="subtitle">
+            我是 <strong>Mosery</strong>，主要做 Web/小程序/移动端应用。关注交付质量、性能体验与工程化。
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">看项目</a>
+            <a class="btn" href="#contact">联系我</a>
+          </div>
+          <div class="meta">
+            <span id="status-dot" class="dot"></span>
+            <span id="status-text">可联系</span>
+            <span class="sep">·</span>
+            <span class="muted">邮箱：1169313164@qq.com</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card">
+            <div class="card-title">技能栈</div>
+            <div class="pill-row">
+              <span class="pill">Vue / uni-app</span>
+              <span class="pill">React</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">REST API</span>
+              <span class="pill">工程化</span>
+            </div>
+            <div class="card-footer muted">
+              可把这里替换成你简历里的关键词（岗位/年限/领域）。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-head">
+          <h2>关于我</h2>
+          <p class="muted">一句话定位 + 3 条优势，最能打动 HR/面试官。</p>
+        </div>
+        <div class="grid2">
+          <div class="panel">
+            <h3>我擅长什么</h3>
+            <ul>
+              <li>从 0 到 1 搭建业务端：登录/权限/表单/列表/流程</li>
+              <li>统一请求封装、错误处理、环境配置（dev/mock/prod）</li>
+              <li>把复杂流程做成清晰的页面与组件（可维护、可复用）</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>我在找什么</h3>
+            <ul>
+              <li>前端 / 全栈岗位</li>
+              <li>偏业务交付与工程化改造</li>
+              <li>可远程/可到岗（按你的实际情况改）</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>项目</h2>
+          <p class="muted">建议放 2-4 个最能体现价值的项目：你做了什么、带来什么结果。</p>
+        </div>
+
+        <div class="cards">
+          <article class="project">
+            <div class="project-top">
+              <h3>大米品控平台（uni-app）</h3>
+              <span class="tag">移动端</span>
+            </div>
+            <p class="muted">
+              覆盖收购/加工/打包/仓储流程，支持登录鉴权、数据录入与列表查询等。
+            </p>
+            <div class="project-actions">
+              <a class="link" href="#" data-disabled="true">代码（可选）</a>
+              <a class="link" href="#" data-disabled="true">演示（可选）</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3>个人项目 A（占位）</h3>
+              <span class="tag">Web</span>
+            </div>
+            <p class="muted">用 1-2 句话说明：问题、方案、结果（比如效率提升、错误率下降）。</p>
+            <div class="project-actions">
+              <a class="link" href="#" data-disabled="true">GitHub</a>
+              <a class="link" href="#" data-disabled="true">线上地址</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-head">
+          <h2>联系</h2>
+          <p class="muted">把最常用的联系方式放在这里。</p>
+        </div>
+        <div class="panel contact">
+          <div>
+            <div class="k">邮箱</div>
+            <div class="v"><a href="mailto:1169313164@qq.com">1169313164@qq.com</a></div>
+          </div>
+          <div>
+            <div class="k">GitHub</div>
+            <div class="v"><span class="muted">把你的主页链接贴上</span></div>
+          </div>
+          <div>
+            <div class="k">城市</div>
+            <div class="v"><span class="muted">例如：合肥 / 六安 / 远程</span></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        <span>© <span id="year"></span> Mosery</span>
+        <span class="sep">·</span>
+        <span>GitHub Pages</span>
+      </footer>
+    </main>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
+

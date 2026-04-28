@@ -12,7 +12,7 @@
       .demo-nav a{ padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted); background: rgba(255,255,255,.04); }
       .demo-nav a:hover{ color: var(--text); background: rgba(255,255,255,.07); }
       .demo-meta{ margin-top: 10px; color: var(--muted); line-height: 1.7; }
-      .cards3{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+      .cards3{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
       @media (max-width: 860px){ .cards3{ grid-template-columns: 1fr; } }
     </style>
   </head>
@@ -61,7 +61,7 @@
       <section id="list" class="section">
         <div class="section-head">
           <h2>演示列表</h2>
-          <p class="muted">点击进入对应项目的静态演示页。</p>
+          <p class="muted">只展示近期项目（其余项目不做演示）。</p>
         </div>
 
         <div class="cards3">
@@ -82,31 +82,16 @@
 
           <article class="project">
             <div class="project-top">
-              <h3>农业物联网监控管理系统</h3>
-              <span class="tag">Web + 移动</span>
+              <h3>更多项目演示</h3>
+              <span class="tag">按需补充</span>
             </div>
-            <p class="project-meta muted">Vue2 / Element UI / WebSocket / ECharts</p>
+            <p class="project-meta muted">久远项目如无截图/代码，将不做演示。</p>
             <ul class="project-list">
-              <li>实时推送、告警规则、历史查询。</li>
-              <li>图表分析与异常处理策略。</li>
+              <li>只保留近期项目演示，确保内容真实、完整、可讲清楚。</li>
+              <li>后续如补齐截图/脱敏材料，可再新增演示页。</li>
             </ul>
             <div class="project-actions">
-              <a class="link" href="./iot-monitor/" rel="noopener noreferrer">进入演示</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-top">
-              <h3>企业电商综合平台</h3>
-              <span class="tag">Web + 小程序</span>
-            </div>
-            <p class="project-meta muted">Vue2 / Vuex / Element UI / UniApp</p>
-            <ul class="project-list">
-              <li>管理端（商品/订单/会员/营销）。</li>
-              <li>小程序商城（加购/下单/支付）。</li>
-            </ul>
-            <div class="project-actions">
-              <a class="link" href="./ecommerce/" rel="noopener noreferrer">进入演示</a>
+              <span class="link" data-disabled="true">暂未开放</span>
             </div>
           </article>
         </div>

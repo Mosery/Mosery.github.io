@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="个人主页 / 作品集" />
-    <title>Mosery | 个人主页</title>
+    <meta
+      name="description"
+      content="武翠云 — 前端开发工程师，7 年经验，Vue / 数据可视化 / 微信小程序，合肥，可到岗"
+    />
+    <title>武翠云 · 前端开发（Vue / 可视化 / 小程序）</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
@@ -12,12 +15,15 @@
 
     <header class="container header">
       <a class="brand" href="#">
-        <span class="logo">M</span>
-        <span class="brand-text">Mosery</span>
+        <span class="logo">武</span>
+        <span class="brand-text">武翠云</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="页面内导航">
         <a href="#about">关于</a>
+        <a href="#experience">经历</a>
         <a href="#projects">项目</a>
+        <a href="#skills">技能</a>
+        <a href="#education">教育</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
@@ -25,130 +31,236 @@
     <main class="container">
       <section class="hero">
         <div class="hero-left">
-          <p class="badge">前端 / 全栈 · 可接项目</p>
-          <h1 class="title">把产品做“能用、好用、可持续迭代”</h1>
-          <p class="subtitle">
-            我是 <strong>Mosery</strong>，主要做 Web/小程序/移动端应用。关注交付质量、性能体验与工程化。
+          <p class="badge">前端开发 · Vue / 可视化 / 小程序 · 7 年</p>
+          <h1 class="title">武翠云</h1>
+          <p class="subtitle lead">
+            前端开发工程师，主栈 <strong>Vue2 / Vue3</strong>，覆盖 Web、移动端与
+            <strong>微信小程序</strong>，可端到端交付。擅长
+            <strong>ECharts 数据可视化</strong>与性能优化（分包、懒加载、构建与请求优化），曾带 3–4
+            人小团队推进多项目并行交付。
           </p>
           <div class="cta">
-            <a class="btn primary" href="#projects">看项目</a>
+            <a class="btn primary" href="#projects">项目经验</a>
             <a class="btn" href="#contact">联系我</a>
           </div>
           <div class="meta">
             <span id="status-dot" class="dot"></span>
-            <span id="status-text">可联系</span>
+            <span id="status-text">到岗：随时</span>
             <span class="sep">·</span>
-            <span class="muted">邮箱：1169313164@qq.com</span>
+            <span class="muted">合肥</span>
+            <span class="sep">·</span>
+            <span class="muted">eternalsilence2525@gmail.com</span>
           </div>
         </div>
 
         <div class="hero-right">
           <div class="card">
-            <div class="card-title">技能栈</div>
+            <div class="card-title">核心技能</div>
             <div class="pill-row">
-              <span class="pill">Vue / uni-app</span>
-              <span class="pill">React</span>
-              <span class="pill">Node.js</span>
+              <span class="pill">Vue2 / Vue3</span>
+              <span class="pill">Vite</span>
+              <span class="pill">Pinia / Vuex</span>
+              <span class="pill">ECharts</span>
+              <span class="pill">WebSocket</span>
+              <span class="pill">微信小程序</span>
+              <span class="pill">UniApp</span>
               <span class="pill">TypeScript</span>
-              <span class="pill">REST API</span>
-              <span class="pill">工程化</span>
             </div>
-            <div class="card-footer muted">
-              可把这里替换成你简历里的关键词（岗位/年限/领域）。
-            </div>
+            <div class="card-footer muted">工程化、组件化、接口联调、代码评审与线上问题定位</div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="section-head">
-          <h2>关于我</h2>
-          <p class="muted">一句话定位 + 3 条优势，最能打动 HR/面试官。</p>
+          <h2>个人简介</h2>
+          <p class="muted">7 年前端（全职 + 外包），稳定交付与体验并重。</p>
         </div>
         <div class="grid2">
           <div class="panel">
-            <h3>我擅长什么</h3>
+            <h3>交付与范围</h3>
             <ul>
-              <li>从 0 到 1 搭建业务端：登录/权限/表单/列表/流程</li>
-              <li>统一请求封装、错误处理、环境配置（dev/mock/prod）</li>
-              <li>把复杂流程做成清晰的页面与组件（可维护、可复用）</li>
+              <li>7 年前端经验，主栈 Vue2 / Vue3，覆盖 Web、移动端、微信小程序，可端到端交付。</li>
+              <li>擅长数据可视化（ECharts）与性能优化：分包、懒加载、构建与请求优化、资源与移动端适配。</li>
             </ul>
           </div>
           <div class="panel">
-            <h3>我在找什么</h3>
+            <h3>协作与团队</h3>
             <ul>
-              <li>前端 / 全栈岗位</li>
-              <li>偏业务交付与工程化改造</li>
-              <li>可远程/可到岗（按你的实际情况改）</li>
+              <li>带领 3–4 人小团队：排期、技术方案、代码评审与难点攻关，保障多项目并行交付。</li>
+              <li>需求拆解、接口联调、缺陷修复与验收支持，推进组件化与工程化落地。</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <section id="experience" class="section">
+        <div class="section-head">
+          <h2>工作经历</h2>
+          <p class="muted">按时间由近到远。</p>
+        </div>
+        <ol class="timeline">
+          <li class="exp">
+            <div class="exp-top">
+              <h3>前端开发工程师（远程 / 外包）</h3>
+              <span class="exp-date">2024.03 – 至今</span>
+            </div>
+            <p class="muted exp-desc">
+              担任交付负责人：排期、方案、联调与验收闭环。承接 Web / 移动端 / 小程序定制交付；基于
+              Vue3 + Vite + Pinia 复用项目基建与通用组件，提升交付效率与可维护性。
+            </p>
+          </li>
+          <li class="exp">
+            <div class="exp-top">
+              <h3>合肥微岑信息科技有限公司 · 前端开发工程师</h3>
+              <span class="exp-date">2021.12 – 2024.03</span>
+            </div>
+            <p class="muted exp-desc">
+              负责 Web / APP / 小程序项目交付与迭代，主导核心模块、联调与线上问题定位；带 3–4
+              人团队，负责排期、技术方案与代码评审；推进组件化与工程化（Vue2 / Vue3）与核心页面性能优化。
+            </p>
+          </li>
+          <li class="exp">
+            <div class="exp-top">
+              <h3>合肥微帽网络科技有限公司 · 前端开发工程师</h3>
+              <span class="exp-date">2019.07 – 2021.09</span>
+            </div>
+            <p class="muted exp-desc">
+              电商平台前端开发与维护，组件化提升复用与可维护性；主导移动端适配与性能优化（懒加载、分包、资源优化等）；完成微信小程序商品展示、下单支付等核心模块。
+            </p>
+          </li>
+        </ol>
+      </section>
+
       <section id="projects" class="section">
         <div class="section-head">
-          <h2>项目</h2>
-          <p class="muted">建议放 2-4 个最能体现价值的项目：你做了什么、带来什么结果。</p>
+          <h2>项目经历</h2>
+          <p class="muted">精选与业务、可视化、小程序强相关的交付项目。</p>
         </div>
 
         <div class="cards">
-          <article class="project">
+          <article class="project project--wide">
             <div class="project-top">
-              <h3>大米品控平台（uni-app）</h3>
-              <span class="tag">移动端</span>
+              <h3>舒城蔬菜区块链溯源系统</h3>
+              <span class="tag">Web + 移动 + 小程序</span>
             </div>
-            <p class="muted">
-              覆盖收购/加工/打包/仓储流程，支持登录鉴权、数据录入与列表查询等。
-            </p>
-            <div class="project-actions">
-              <a class="link" href="#" data-disabled="true">代码（可选）</a>
-              <a class="link" href="#" data-disabled="true">演示（可选）</a>
-            </div>
+            <p class="project-meta muted">2025.03 – 2025.07 · Vue3 / Vite / Pinia / Axios / ECharts / 小程序</p>
+            <ul class="project-list">
+              <li>Vue3 + Vite + Pinia 与模块化拆分，提升可扩展性与维护性。</li>
+              <li>上链信息录入（移动端）、溯源扫码查询（小程序）、多维统计看板（Web），对接区块链接口与异常兜底。</li>
+              <li>ECharts 实现种植 / 物流 / 销售多维可视化，支持筛选与图表联动；沉淀通用溯源与可视化组件，构建与资源优化降低生产包体。</li>
+            </ul>
           </article>
 
           <article class="project">
             <div class="project-top">
-              <h3>个人项目 A（占位）</h3>
-              <span class="tag">Web</span>
+              <h3>农业物联网监控管理系统</h3>
+              <span class="tag">Web + 移动</span>
             </div>
-            <p class="muted">用 1-2 句话说明：问题、方案、结果（比如效率提升、错误率下降）。</p>
-            <div class="project-actions">
-              <a class="link" href="#" data-disabled="true">GitHub</a>
-              <a class="link" href="#" data-disabled="true">线上地址</a>
-            </div>
+            <p class="project-meta muted">2022.05 – 2022.12 · Vue2 / Element UI / WebSocket / ECharts</p>
+            <ul class="project-list">
+              <li>搭建监控管理前端，开发设备监控、预警规则、历史查询与数据分析等模块。</li>
+              <li>WebSocket 实现设备数据实时推送与秒级刷新；ECharts 多图表与按时间、设备维度分析。</li>
+            </ul>
           </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3>企业电商综合平台</h3>
+              <span class="tag">Web + 小程序</span>
+            </div>
+            <p class="project-meta muted">2020.03 – 2020.08 · Vue2 / Vuex / Element UI / UniApp</p>
+            <ul class="project-list">
+              <li>参与架构与商品、订单、会员、营销等管理端核心模块，完成联调验收。</li>
+              <li>UniApp 小程序商城：商品、购物车、下单支付、个人中心；移动端适配与图片压缩、懒加载、请求节流等优化。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-head">
+          <h2>技能清单</h2>
+          <p class="muted">与简历一致，便于检索与匹配岗位关键词。</p>
+        </div>
+        <div class="grid2">
+          <div class="panel">
+            <h3>语言与基础</h3>
+            <p class="skill-line">JavaScript（ES6+）、HTML5 / CSS3、TypeScript（接口类型、Pinia Store）、Java（基础）</p>
+          </div>
+          <div class="panel">
+            <h3>框架与 UI</h3>
+            <p class="skill-line">Vue2 / Vue3、Vue Router、Pinia / Vuex、Element UI、Vant</p>
+          </div>
+          <div class="panel">
+            <h3>小程序与跨端</h3>
+            <p class="skill-line">微信小程序、UniApp</p>
+          </div>
+          <div class="panel">
+            <h3>可视化与实时</h3>
+            <p class="skill-line">ECharts、WebSocket</p>
+          </div>
+          <div class="panel">
+            <h3>工程化与性能</h3>
+            <p class="skill-line">Vite、Node.js、组件化 / 模块化、路由懒加载、代码分包、资源优化、请求节流与缓存、移动端适配</p>
+          </div>
+          <div class="panel">
+            <h3>协作交付</h3>
+            <p class="skill-line">需求拆解与排期、接口联调、代码评审、缺陷修复与验收支持</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section-head">
+          <h2>教育背景</h2>
+        </div>
+        <div class="grid2">
+          <div class="panel">
+            <h3>安徽农业大学</h3>
+            <p class="muted">计算机应用技术 · 硕士</p>
+            <p class="edu-date">2016.09 – 2019.07</p>
+          </div>
+          <div class="panel">
+            <h3>吉林农业大学</h3>
+            <p class="muted">计算机科学与技术 · 本科</p>
+            <p class="edu-date">2012.09 – 2016.07</p>
+          </div>
         </div>
       </section>
 
       <section id="contact" class="section">
         <div class="section-head">
           <h2>联系</h2>
-          <p class="muted">把最常用的联系方式放在这里。</p>
+          <p class="muted">招聘与项目合作欢迎直接联系（建议说明来意）。</p>
         </div>
         <div class="panel contact">
           <div>
+            <div class="k">手机</div>
+            <div class="v"><a href="tel:15655113090">156 5511 3090</a></div>
+          </div>
+          <div>
             <div class="k">邮箱</div>
-            <div class="v"><a href="mailto:1169313164@qq.com">1169313164@qq.com</a></div>
+            <div class="v">
+              <a href="mailto:eternalsilence2525@gmail.com">eternalsilence2525@gmail.com</a>
+            </div>
           </div>
           <div>
             <div class="k">GitHub</div>
-            <div class="v"><span class="muted">把你的主页链接贴上</span></div>
-          </div>
-          <div>
-            <div class="k">城市</div>
-            <div class="v"><span class="muted">例如：合肥 / 六安 / 远程</span></div>
+            <div class="v">
+              <a href="https://github.com/Mosery" rel="noopener noreferrer" target="_blank">github.com/Mosery</a>
+            </div>
           </div>
         </div>
       </section>
 
       <footer class="footer muted">
-        <span>© <span id="year"></span> Mosery</span>
+        <span>© <span id="year"></span> 武翠云</span>
         <span class="sep">·</span>
-        <span>GitHub Pages</span>
+        <span>本页托管于 GitHub Pages</span>
       </footer>
     </main>
 
     <script src="./assets/main.js"></script>
   </body>
 </html>
-

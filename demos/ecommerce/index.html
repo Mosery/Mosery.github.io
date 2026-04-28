@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>项目演示 · 企业电商综合平台</title>
+    <meta name="description" content="企业电商综合平台 · 项目演示（脱敏）" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <style>
+      .demo-header{ padding: 22px 0; display:flex; align-items:center; justify-content: space-between; gap: 14px; position: sticky; top: 0; backdrop-filter: blur(10px); background: linear-gradient(to bottom, rgba(7,10,18,.70), rgba(7,10,18,0)); }
+      .demo-nav{ display:flex; gap: 10px; align-items:center; flex-wrap: wrap; }
+      .demo-nav a{ padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted); background: rgba(255,255,255,.04); }
+      .demo-nav a:hover{ color: var(--text); background: rgba(255,255,255,.07); }
+      .demo-grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+      .demo-shot{ border: 1px dashed rgba(255,255,255,.20); border-radius: var(--radius); background: rgba(255,255,255,.03); padding: 14px; color: var(--muted); line-height: 1.6; }
+      .demo-shot strong{ color: rgba(255,255,255,.90); }
+      @media (max-width: 860px){ .demo-grid{ grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <header class="container demo-header">
+      <a class="brand" href="../../index.html#projects">
+        <span class="logo">武</span>
+        <span class="brand-text">返回主页</span>
+      </a>
+      <nav class="demo-nav" aria-label="演示页导航">
+        <a href="#overview">概览</a>
+        <a href="#admin">管理端</a>
+        <a href="#miniapp">小程序</a>
+        <a href="#perf">优化点</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <p class="badge">项目演示（脱敏）</p>
+          <h1 class="title">企业电商综合平台</h1>
+          <p class="subtitle lead">
+            管理端 + 小程序商城：商品、订单、会员、营销等模块，支持下单支付与移动端体验优化。
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#admin">看管理端</a>
+            <a class="btn" href="#miniapp">看小程序</a>
+          </div>
+          <div class="meta">
+            <span class="muted">技术栈：Vue2 / Vuex / Element UI / UniApp</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card">
+            <div class="card-title">展示建议</div>
+            <div class="pill-row">
+              <span class="pill">商品/订单链路</span>
+              <span class="pill">支付流程</span>
+              <span class="pill">营销活动</span>
+              <span class="pill">移动端优化</span>
+            </div>
+            <div class="card-footer muted">如不能公开：仅展示截图 + 交互说明 + 数据脱敏规则。</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-head">
+          <h2>概览</h2>
+          <p class="muted">把电商闭环讲清楚：上架 → 下单 → 支付 → 发货 → 售后。</p>
+        </div>
+        <div class="grid2">
+          <div class="panel">
+            <h3>管理端模块</h3>
+            <ul>
+              <li>商品：类目、规格、库存、上架。</li>
+              <li>订单：下单、支付、发货、退款/售后。</li>
+              <li>会员：等级、权益、积分（如有）。</li>
+              <li>营销：优惠券、活动、满减等（如有）。</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>小程序端模块</h3>
+            <ul>
+              <li>商品浏览、搜索与详情。</li>
+              <li>购物车、下单、支付。</li>
+              <li>个人中心、订单列表与详情。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="admin" class="section">
+        <div class="section-head">
+          <h2>管理端（占位）</h2>
+          <p class="muted">建议放：商品编辑页、订单详情页、营销配置页等截图。</p>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-shot">
+            <strong>页面：商品管理</strong>
+            <div>类目/规格/库存 → 批量上架 → 图片上传（脱敏）</div>
+          </div>
+          <div class="demo-shot">
+            <strong>页面：订单管理</strong>
+            <div>筛选与导出 → 订单详情 → 发货/退款流转（示例）</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="miniapp" class="section">
+        <div class="section-head">
+          <h2>小程序（占位）</h2>
+          <p class="muted">建议放：商品详情、购物车、确认订单、支付结果页。</p>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-shot">
+            <strong>流程：下单支付</strong>
+            <div>加购 → 选择地址/优惠 → 提交订单 → 调起支付 → 结果页</div>
+          </div>
+          <div class="demo-shot">
+            <strong>移动端体验</strong>
+            <div>适配、图片压缩、懒加载、请求节流与缓存（可写你做过的点）</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="perf" class="section">
+        <div class="section-head">
+          <h2>优化点（可量化更好）</h2>
+          <p class="muted">如果你能写具体指标，会非常加分。</p>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>图片压缩与懒加载；列表长渲染优化。</li>
+            <li>请求节流/防抖、缓存策略与异常重试。</li>
+            <li>小程序包体优化（分包/资源优化等）。</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        <span>© <span id="year"></span> 武翠云</span>
+      </footer>
+    </main>
+
+    <script src="../../assets/main.js"></script>
+  </body>
+</html>

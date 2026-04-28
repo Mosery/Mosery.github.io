@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>项目演示合集</title>
+    <meta name="description" content="项目演示合集（静态脱敏演示页）" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      .demo-header{ padding: 22px 0; display:flex; align-items:center; justify-content: space-between; gap: 14px; position: sticky; top: 0; backdrop-filter: blur(10px); background: linear-gradient(to bottom, rgba(7,10,18,.70), rgba(7,10,18,0)); }
+      .demo-nav{ display:flex; gap: 10px; align-items:center; flex-wrap: wrap; }
+      .demo-nav a{ padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted); background: rgba(255,255,255,.04); }
+      .demo-nav a:hover{ color: var(--text); background: rgba(255,255,255,.07); }
+      .demo-meta{ margin-top: 10px; color: var(--muted); line-height: 1.7; }
+      .cards3{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+      @media (max-width: 860px){ .cards3{ grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <header class="container demo-header">
+      <a class="brand" href="../index.html#projects">
+        <span class="logo">武</span>
+        <span class="brand-text">返回主页</span>
+      </a>
+      <nav class="demo-nav" aria-label="演示页导航">
+        <a href="#list">演示列表</a>
+        <a href="../index.html#contact">联系我</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <p class="badge">项目演示合集</p>
+          <h1 class="title">Demos</h1>
+          <p class="subtitle lead">把不方便公开的项目，用「脱敏说明 + 截图 + 流程」做成可分享的静态演示。</p>
+          <div class="cta">
+            <a class="btn primary" href="#list">查看演示</a>
+            <a class="btn" href="../index.html#projects">返回项目经历</a>
+          </div>
+          <div class="demo-meta">
+            建议每个演示页都包含：核心角色、关键流程、页面截图（脱敏）、你负责的部分、优化结果（能量化更好）。
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card">
+            <div class="card-title">脱敏建议</div>
+            <div class="pill-row">
+              <span class="pill">隐藏公司/客户名</span>
+              <span class="pill">打码手机号/身份证</span>
+              <span class="pill">替换真实数据</span>
+              <span class="pill">屏蔽内部域名</span>
+            </div>
+            <div class="card-footer muted">必要时只放流程图与功能说明，也可以。</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="list" class="section">
+        <div class="section-head">
+          <h2>演示列表</h2>
+          <p class="muted">点击进入对应项目的静态演示页。</p>
+        </div>
+
+        <div class="cards3">
+          <article class="project">
+            <div class="project-top">
+              <h3>舒城蔬菜区块链溯源系统</h3>
+              <span class="tag">Web + 移动 + 小程序</span>
+            </div>
+            <p class="project-meta muted">Vue3 / Vite / Pinia / Axios / ECharts / 小程序</p>
+            <ul class="project-list">
+              <li>上链录入、扫码溯源、统计看板。</li>
+              <li>接口异常兜底、看板联动与组件复用。</li>
+            </ul>
+            <div class="project-actions">
+              <a class="link" href="./traceability/" rel="noopener noreferrer">进入演示</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3>农业物联网监控管理系统</h3>
+              <span class="tag">Web + 移动</span>
+            </div>
+            <p class="project-meta muted">Vue2 / Element UI / WebSocket / ECharts</p>
+            <ul class="project-list">
+              <li>实时推送、告警规则、历史查询。</li>
+              <li>图表分析与异常处理策略。</li>
+            </ul>
+            <div class="project-actions">
+              <a class="link" href="./iot-monitor/" rel="noopener noreferrer">进入演示</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3>企业电商综合平台</h3>
+              <span class="tag">Web + 小程序</span>
+            </div>
+            <p class="project-meta muted">Vue2 / Vuex / Element UI / UniApp</p>
+            <ul class="project-list">
+              <li>管理端（商品/订单/会员/营销）。</li>
+              <li>小程序商城（加购/下单/支付）。</li>
+            </ul>
+            <div class="project-actions">
+              <a class="link" href="./ecommerce/" rel="noopener noreferrer">进入演示</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        <span>© <span id="year"></span> 武翠云</span>
+      </footer>
+    </main>
+
+    <script src="../assets/main.js"></script>
+  </body>
+</html>

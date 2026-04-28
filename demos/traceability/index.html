@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>项目演示 · 舒城蔬菜区块链溯源系统</title>
+    <meta name="description" content="舒城蔬菜区块链溯源系统 · 项目演示（脱敏）" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <style>
+      .demo-header{ padding: 22px 0; display:flex; align-items:center; justify-content: space-between; gap: 14px; position: sticky; top: 0; backdrop-filter: blur(10px); background: linear-gradient(to bottom, rgba(7,10,18,.70), rgba(7,10,18,0)); }
+      .demo-nav{ display:flex; gap: 10px; align-items:center; flex-wrap: wrap; }
+      .demo-nav a{ padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted); background: rgba(255,255,255,.04); }
+      .demo-nav a:hover{ color: var(--text); background: rgba(255,255,255,.07); }
+      .demo-grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+      .demo-shot{ border: 1px dashed rgba(255,255,255,.20); border-radius: var(--radius); background: rgba(255,255,255,.03); padding: 14px; color: var(--muted); line-height: 1.6; }
+      .demo-shot strong{ color: rgba(255,255,255,.90); }
+      @media (max-width: 860px){ .demo-grid{ grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <header class="container demo-header">
+      <a class="brand" href="../../index.html#projects">
+        <span class="logo">武</span>
+        <span class="brand-text">返回主页</span>
+      </a>
+      <nav class="demo-nav" aria-label="演示页导航">
+        <a href="#overview">概览</a>
+        <a href="#flows">核心流程</a>
+        <a href="#dashboards">看板示例</a>
+        <a href="#notes">说明</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <p class="badge">项目演示（脱敏）</p>
+          <h1 class="title">舒城蔬菜区块链溯源系统</h1>
+          <p class="subtitle lead">
+            Web + 移动端 + 小程序一体交付：上链录入、扫码溯源查询、多维统计看板。
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#flows">看流程</a>
+            <a class="btn" href="../../index.html#contact">联系我</a>
+          </div>
+          <div class="meta">
+            <span class="muted">技术栈：Vue3 / Vite / Pinia / Axios / ECharts / 小程序</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card">
+            <div class="card-title">你可以在这里展示什么</div>
+            <div class="pill-row">
+              <span class="pill">关键页面截图</span>
+              <span class="pill">脱敏字段说明</span>
+              <span class="pill">交互流程图</span>
+              <span class="pill">性能优化点</span>
+            </div>
+            <div class="card-footer muted">提示：如项目不便公开，可只展示截图与流程，不放真实地址。</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-head">
+          <h2>概览</h2>
+          <p class="muted">对外展示建议：讲清楚“角色 - 流程 - 数据来源 - 价值”。</p>
+        </div>
+        <div class="grid2">
+          <div class="panel">
+            <h3>模块</h3>
+            <ul>
+              <li>移动端：上链信息录入（批次、种植、质检等）。</li>
+              <li>小程序：扫码溯源查询（批次链路、状态与证明）。</li>
+              <li>Web：统计看板（种植 / 物流 / 销售多维）。</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>你的贡献</h3>
+            <ul>
+              <li>Vue3 + Vite + Pinia 基建与模块化拆分，提升可维护性。</li>
+              <li>对接区块链接口、异常兜底与数据校验。</li>
+              <li>ECharts 看板联动、筛选与复用组件沉淀。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="flows" class="section">
+        <div class="section-head">
+          <h2>核心流程（建议配图）</h2>
+          <p class="muted">把下面占位文字替换成你的截图或录屏帧（脱敏）。</p>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-shot">
+            <strong>流程 1：移动端上链录入</strong>
+            <div>登录 → 选择基地/批次 → 录入种植/质检 → 提交 → 返回链上凭证（哈希/区块高度等，脱敏展示）</div>
+          </div>
+          <div class="demo-shot">
+            <strong>流程 2：小程序扫码溯源</strong>
+            <div>扫码 → 拉取链上/链下数据 → 展示产地/物流/销售链路 → 异常提示（无数据/接口失败）</div>
+          </div>
+          <div class="demo-shot">
+            <strong>流程 3：Web 统计看板</strong>
+            <div>筛选（时间/基地/品类）→ 图表联动 → 下钻详情 → 导出（如有）</div>
+          </div>
+          <div class="demo-shot">
+            <strong>工程化要点</strong>
+            <div>路由懒加载、分包、资源优化、接口缓存/节流、统一错误处理。</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboards" class="section">
+        <div class="section-head">
+          <h2>看板示例（占位）</h2>
+          <p class="muted">你可以把 ECharts 截图放到这里，或贴一张静态图。</p>
+        </div>
+        <div class="panel">
+          <p class="muted">建议展示：产量趋势、物流时效、销量分布、异常批次占比等。</p>
+        </div>
+      </section>
+
+      <section id="notes" class="section">
+        <div class="section-head">
+          <h2>说明</h2>
+          <p class="muted">本页为静态演示页，不包含真实业务地址与敏感信息。</p>
+        </div>
+        <div class="panel">
+          <ul>
+            <li>如需更强说服力：加入“问题-方案-结果”的量化数据（例如包体、首屏、接口耗时）。</li>
+            <li>如不能放任何截图：用流程图/模块图 + 关键交互点描述，也一样有用。</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        <span>© <span id="year"></span> 武翠云</span>
+      </footer>
+    </main>
+
+    <script src="../../assets/main.js"></script>
+  </body>
+</html>
